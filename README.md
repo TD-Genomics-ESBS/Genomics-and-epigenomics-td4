@@ -29,7 +29,7 @@ cp /data/TDannotation/sulcia.tfa .
 You will use the tRNAscan-SE program. To use it, activate a conda environment:
 ```bash
 /bin/miniconda3/bin/conda init bash 
-source .bashrc
+source ~/.bashrc
 conda activate /home/merlat/.conda/envs/trnascan
 ```
 
