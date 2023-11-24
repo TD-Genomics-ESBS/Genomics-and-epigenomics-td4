@@ -126,9 +126,18 @@ more tmp.train
 
 > :question: How many genes have been used to build the model (file tmp.coord)?
 
+```
+more tmp.train |wc -l
+```
+
 > :question:  What do you think about the number of predicted genes? The coding density?
 
+```
+more g2.coord |wc -l
+```
+
 > :question: The GC content is 22%. How this percentage may influence the quality of glimmer predictions?
+
 
 #### Correction of glimmer predictions by similarity searches
 
