@@ -11,9 +11,10 @@
 ssh -Y yourlogin@tp.lbgi.fr
 ```
 
-The password is the same for everyone: *TPgenomics2022*
+The password is the same for everyone: *TPgenomics2023*
 
 Remark: the password is not displayed when you type.
+
 1. Copy the genome sequence in your directory. The sequence is available in fasta format at: `/data/TDannotation/sulcia.tfa`.
 
 ```bash	
@@ -89,6 +90,8 @@ blastn -db SulciaDb -query 16S_Coleo.tfa -out 16S.blastn
 blastn -db SulciaDb -query 23S_Myroides.tfa -out 23S.blastn
 ```
 
+> :question: How many copies of each rRNA gene do you find? Comment on gene organization (do not forget to consider positions of tRNA genes).
+
 Use more to display them.
 
 ``` bash
@@ -143,17 +146,21 @@ more g2.coord |wc -l
 
 ##### Over-predictions and error in initiation codon definition
 
-Some genes predicted by glimmer exhibit important overlaps. Some examples of these genes have been translated (protein_sequences.txt available on moodle). Consider genomic context and similarity searches (NCBI BLAST, refseq_protein database, excluding Candidatus Sulcia) to validate or invalidate the existence or propose a correction for the following overlapping genes:
-SMU001/SMU002, SMU023/SMU024.
-1 1478 1308 [-3 L= 171] [ShadowedBy #2] 2 712 3321 [+1 L=2610] [Contains #1]
+Some genes predicted by glimmer exhibit important overlaps. Some examples of these genes have been translated (*protein_sequences.txt* available on moodle). Consider genomic context and similarity searches ((NCBI BLAST)[https://blast.ncbi.nlm.nih.gov/Blast.cgi], refseq_protein database, excluding *Candidatus Sulcia*) to validate or invalidate the existence or propose a correction for the following overlapping genes:
+**SMU001/SMU002, SMU023/SMU024.**
+
+*1 1478 1308 [-3 L= 171] [ShadowedBy #2] 2 712 3321 [+1 L=2610] [Contains #1]
 23 27794 27372 [-3 L= 423]
-24 27770 28498 [+2 L= 729] [DelayedBy #23 L=33]
+24 27770 28498 [+2 L= 729] [DelayedBy #23 L=33]*
+
 
 ##### Under-predictions
 
-Check if the following long intergenic regions (available on moodle) contain a protein coding gene (using NCBI BLAST pages, refseq_protein database and excluding Candidatus Sulcia): SMU043/SMU044, SMU204/SMU206, SMU183/SMU184
-1. Functional annotation
-Assign a function of the following protein (available on moodle) sequences using NCBI BLAST (refseq_protein database and excluding Candidatus Sulcia):
+Check if the following long intergenic regions (available on Moodle) contain a protein coding gene (using (NCBI BLAST)[https://blast.ncbi.nlm.nih.gov/Blast.cgi] pages, refseq_protein database and excluding *Candidatus Sulcia*): SMU043/SMU044, SMU204/SMU206, SMU183/SMU184
+
+### Functional annotation
+
+Assign a function of the following protein (available on Moodle) sequences using (NCBI BLAST)[https://blast.ncbi.nlm.nih.gov/Blast.cgi] (refseq_protein database and excluding Candidatus Sulcia):
 SMU138 et SMU140
 
 > :question: What additional research would be needed in this case?
