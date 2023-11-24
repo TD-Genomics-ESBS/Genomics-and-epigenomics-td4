@@ -30,7 +30,7 @@ You will use the tRNAscan-SE program. To use it, activate a conda environment:
 ```bash
 /bin/miniconda3/bin/conda init bash 
 source .bashrc
-conda activate /home/merlat/miniconda3/envs/trnascan
+conda activate /home/merlat/.conda/envs/trnascan
 ```
 
 To see options: 
